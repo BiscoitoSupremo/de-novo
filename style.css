@@ -1,0 +1,154 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 2s ease-out; 
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    opacity: 0; 
+    animation: fadeInTitle 3s forwards;
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0; 
+    animation: fadeInParagraph 3s forwards;
+    animation-delay: 1s; 
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border-radius: 12%;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s; 
+    opacity: 0; 
+    animation: fadeInButton 2s forwards;
+    animation-delay: 3s;
+}
+
+button:hover {
+    background-color: #333333;
+    transform: scale(1.1); 
+}
+
+.enigma {
+    margin-top: 20px;
+    animation: fadeInEnigma 1.5s ease-out forwards; 
+}
+
+.hint {
+    font-style: italic;
+    color: #b3b3b3;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInParagraph {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInEnigma {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+}
+
+.next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.next-button::before {
+    content: '➜'; 
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.next-button:hover {
+    background: #fff;
+}
+
+.next-button:hover::before {
+    transform: translateX(5px); 
+    color: #111; 
+}

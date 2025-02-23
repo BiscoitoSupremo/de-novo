@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+body {
+    font-family: 'Uncial Antiqua', cursive; 
+    background-color: #2d2a26; 
+    color: #e3d5c0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.documento {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.documento img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.documento img:hover {
+    transform: scale(1.05); 
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Uncial Antiqua', cursive;
+    background: #3b3b3b;
+    color: #e3d5c0;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+    transition: background 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: #4a4a4a;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+body {
+    animation: fadeIn 1.2s ease-out;
+}
