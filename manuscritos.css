@@ -9,6 +9,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    animation: fadeIn 1.2s ease-out;
 }
 
 .container {
@@ -79,6 +80,36 @@ h1 {
     }
 }
 
-body {
-    animation: fadeIn 1.2s ease-out;
+/* Estilos para telas menores (mobile) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .grid {
+        /* Reduzindo a quantidade de colunas para facilitar em telas pequenas */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .symbol img {
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+    }
+
+    .symbol input {
+        width: 90%;
+        font-size: 12px;
+        padding: 4px;
+    }
 }
